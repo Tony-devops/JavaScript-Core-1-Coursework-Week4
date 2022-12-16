@@ -15,7 +15,15 @@
   
 */
 
-function getSettlers() {}
+function getSettlers(famName) {
+  let newColoniser = [];
+  for (let x of famName) {
+    if (x.startsWith('A') && x.includes('family')) {
+      newColoniser.push(x)
+    }
+  }
+  return newColoniser;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
